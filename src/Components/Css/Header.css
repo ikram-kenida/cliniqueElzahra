@@ -1,0 +1,32 @@
+.navigation_bar{
+    height: 120px;
+
+    background-color: rgb(255, 255, 255);
+}
+.top_div_nav{
+    background-color: #00a8e8;
+    color: white;
+    min-height: 60px;
+    padding: 15px;
+}
+.navbtn{
+    font-family: 'Poppins', sans-serif; /* Modern, clean sans-serif font */
+    font-size: 1rem; /* Standard size for buttons */
+    font-weight: 600; /* Medium weight */
+    color: #ffffff; /* White text */
+    background-color: #0033a0; /* Deep blue background */
+    padding: 0.6rem 1.3rem; /* Comfortable button padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    text-transform: uppercase; /* Make text all caps */
+    cursor: pointer; /* Pointer on hover */
+
+}
+.navLink{
+    color: gray !important;
+    font-size: larger !important;
+    
+}
+
+ 
+  

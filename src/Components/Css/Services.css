@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* Global Service Section Styling */
+.services .servicesTitle {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #00a8e8;
+    line-height: 2;
+}
+
+.services .servicesTitle2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #002060;
+    line-height: 2;
+}
+
+/* Individual Service Card Styling */
+.services .service {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+/* Service Title and Description */
+.services .service .title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #002060;
+    margin-bottom: 10px;
+    line-height: 2;
+}
+
+.services .service .description {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    color: rgb(63, 62, 62);
+    line-height: 2;
+    margin: 0;
+}
+
+/* Icon Container Styling */
+.services .service .icondiv {
+    background-color: #f1f9ff;
+   
+    padding: 20px;
+    border-radius: 0 0 50% 50%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Icon Styling */
+.services .service .icon {
+    font-size: 1.5rem;
+   
+}
+.services .service .angleRight{
+    background-color: #f1f9ff;
+    border-radius: 10px;
+}
+.services .service:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition-duration: 0.5s;
+}
+.services .service:hover .angleRight  {
+background-color: #002060;
+color: white;
+
+}
+.services  a{
+    text-decoration: none;
+    background-color: #00a8e8 !important;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.service .icon{
+    color: #00a8e8;
+}
+
+@media (max-width: 576px) {
+    services .servicesTitle {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #00a8e8;
+        line-height: 2;
+    }
+    
+    .services .servicesTitle2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #002060;
+        line-height: 2;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .service{
+        width: 40% !important;
+    }
+}

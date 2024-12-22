@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.reviews{
+    padding-top: 5vh !important;
+    /* background-color: #002060; */
+    padding-bottom: 40vh !important;
+    background-color: #002060;
+    /* background-image: url('https://img.freepik.com/vecteurs-libre/medical-soins-sante-couleur-bleue_1017-26807.jpg?t=st=1734813506~exp=1734817106~hmac=0a7c6cc7c97f80741329670df70c79f4ac73cbef9751b23f6fa6938e93992fba&w=1060'); */
+}
+.reviews .row {
+    margin: 0;
+    padding: 0;
+  
+}
+
+.reviews .servicesTitle {
+   
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFC107;
+    line-height: 2;
+}
+
+.reviews .servicesTitle2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: whitesmoke;
+    line-height: 2;
+    margin-bottom: 20vh !important;
+}
+.reviews .image{
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+   background: #002060;
+background: radial-gradient(circle, #00a8e8 0%, rgb(249, 247, 247) 100%);
+height: 70vh;
+
+
+    border-radius: 50%;
+    padding-top: 30px !important;
+} 
+.reviews .comment{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+    position: absolute;
+    z-index: 5;
+    color: #002060;
+     width: 27%; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 !important;
+   
+}
+
+.reviews .c-1{
+    margin-top: -70vh  !important;
+    margin-right: -12vw;
+    
+
+}
+
+.reviews .c-2{
+    margin-top: -70vh;
+    margin-left: -15vw;
+
+}
+.reviews .c-3{
+    margin-top: -20vh;
+  
+
+}
+.reviews .c-4{
+    margin-top: -20vh;
+  
+
+}
+.reviews .comment .patient{
+    border-radius: 50% !important;
+}
+.reviews .comment p{
+    font-family: "Playfair Display", serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 35Px;
+}
+.reviews .comment h6{
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.reviews .comment .star{
+    margin-right: 1.5px;
+    color: #FFC107;
+}
+
+.reviews .comment .starblue{
+    margin-right: 1.5px;
+    color: #002060;
+}
+.small_reviews{
+    display: none !important;
+}
+@media (max-width: 576px) {
+    
+    .reviews .comment{
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+        position:static;
+        z-index: 5;
+        color: #002060;
+         width: 100%; 
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+       
+        padding-right: 40px ;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+       
+    }
+    .reviews .servicesTitle2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: whitesmoke;
+        line-height: 2;
+        margin-bottom: 4vh !important;
+    }
+    .reviews{
+        padding-top: 5vh !important;
+        /* background-color: #002060; */
+        padding-bottom: 6vh !important;
+        background-color: #002060;
+        /* background-image: url('https://img.freepik.com/vecteurs-libre/medical-soins-sante-couleur-bleue_1017-26807.jpg?t=st=1734813506~exp=1734817106~hmac=0a7c6cc7c97f80741329670df70c79f4ac73cbef9751b23f6fa6938e93992fba&w=1060'); */
+    }
+    .big_reviews{
+        display: none !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .reviews .comment{
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+        position:static;
+        z-index: 5;
+        color: #002060;
+         width: 100%; 
+        
+        padding-top: 15px;
+        padding-bottom: 15px;
+       
+        padding-right: 40px ;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+       
+    }
+    .big_reviews{
+        display: none !important;
+    }
+    .small_reviews{
+        display: block !important;
+    }
+    .reviews .servicesTitle2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: whitesmoke;
+        line-height: 2;
+        margin-bottom: 4vh !important;
+    }
+    .reviews{
+        padding-top: 5vh !important;
+        /* background-color: #002060; */
+        padding-bottom: 6vh !important;
+        background-color: #002060;
+        /* background-image: url('https://img.freepik.com/vecteurs-libre/medical-soins-sante-couleur-bleue_1017-26807.jpg?t=st=1734813506~exp=1734817106~hmac=0a7c6cc7c97f80741329670df70c79f4ac73cbef9751b23f6fa6938e93992fba&w=1060'); */
+    }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* Global Service Section Styling */
+
+
+.whyChooseUs{
+    background-color: whitesmoke ;
+    padding-top: 2vh !important ;
+    padding-bottom: 2vh !important;
+}
+
+.whyChooseUs .servicesTitle {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #00a8e8;
+    line-height: 2;
+}
+
+.whyChooseUs .servicesTitle2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #002060;
+    line-height: 2;
+}
+.whyChooseUs .prgrph{
+    border-left: #00a8e8 solid 1px;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    
+    color: rgb(101, 111, 121);
+    line-height: 2;
+    padding-left: 20px;
+}
+.whyChooseUs .whys .why{
+    background-color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.whyChooseUs .icon{
+    color: #00a8e8;
+    font-size: 20px !important;
+    background-color: #d0e5ee;
+    padding: 15px;
+    border-radius: 5px;
+}
+.why h6{
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #002060;
+    line-height: 2;
+    margin-top: 15px;
+}
+.whyChooseUs .textimg{
+    background-color: #00a8e8;
+    border-radius: 6px;
+    border-top-right-radius: 30px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: -6vh;
+    position: absolute;
+    z-index: 5;
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+   .secondDiv , .secondDiv img{
+    width: 100% !important;
+    margin: 0 !important;
+    justify-content: center !important;
+   }
+   .firstDiv , .prgrph {
+    width: 100% !important;
+    justify-content: center !important;
+   }
+   .firstDiv .why{
+    width: 45% !important;
+   }
+}

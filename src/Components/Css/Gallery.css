@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.gallery {
+    background-color: whitesmoke;
+    padding-top: 10vh;
+    margin-top: 20vh !important;
+    padding-bottom: 10vh;
+ 
+}
+
+.gallery .servicesTitle {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #00a8e8;
+    line-height: 2;
+}
+
+.gallery .servicesTitle2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #002060;
+    line-height: 2;
+}
+
+.gallery img {
+   
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.gallery .img-overlay-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery .img-overlay-container img {
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease;
+}
+
+.gallery .img-overlay-container:hover img {
+    transform: scale(1.1);
+}
+
+.gallery .img-overlay-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 32, 96, 0.6); /* Navy blue overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.gallery .img-overlay-container:hover::before {
+    opacity: 1;
+}
+
+.gallery .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.gallery .img-overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+.gallery .overlay i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.gallery .overlay .icon {
+    background-color: #FFC107;
+    border-radius: 50%;
+    padding: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.gallery .overlay p {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem !important;
+    font-weight: 900 !important;
+    text-align: center;
+    color: white;
+   
+}
+
+/* Media Query for Phones and Tablets */
+@media (max-width: 768px) {
+    .gallery .img-overlay-container::before {
+        opacity: 1; 
+    }
+
+    .gallery .overlay {
+        opacity: 1; 
+    }
+   
+}
+@media (max-width: 576px) {
+    .gallery .servicesTitle {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #00a8e8;
+        line-height: 2;
+    }
+    
+    .gallery .servicesTitle2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #002060;
+        line-height: 2;
+    }
+   
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .gallery .gallery_img {
+        width: 50% !important;
+       
+    }
+    .gallery .gallery_img_last{
+        width: 100% !important;
+    }
+    .gallery .img-overlay-container::before {
+        opacity: 1; 
+    }
+
+    .gallery .overlay {
+        opacity: 1; 
+    }
+   
+    
+}
