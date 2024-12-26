@@ -1,0 +1,149 @@
+
+
+
+
+.formDiv2 {
+   
+    border-radius: 10px !important;
+    margin-top: -10vh;
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+   margin-bottom: 10vh;
+  }
+  .formDiv2 p{
+  
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2rem;
+    
+    margin-bottom: -5px;
+    color: #00a8e8 !important;
+    line-height: 2;
+  }
+  .formDiv2 h4 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #002060 !important;
+    line-height: 2;
+  }
+  
+  .formDiv2 .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .formDiv2 input,
+  .formDiv2 select {
+    background-color: whitesmoke;
+    border: 0.4px solid white !important;
+    padding: 15px;
+    margin-bottom: 5px !important;
+    border-radius: 10px !important;
+    color: #002060;
+    font-size: 1rem; /* Adjust if needed */
+    transition: background-color 0.3s ease;
+  }
+  
+  .formDiv2 input::placeholder,
+  .formDiv2 select::placeholder {
+    color: #002060 !important;
+    opacity: 1;
+  }
+  
+  .formDiv2 input:focus,
+  .formDiv2 select:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: #002060 !important;
+    color: #002060; /* Maintain white text color on focus */
+    
+    border:0.4px solid white   !important;
+  }
+  
+  .formDiv2 input:not(:placeholder-shown),
+  .formDiv2 select:not(:placeholder-shown) {
+    padding-top: 18px; /* Space for the floating label */
+  }
+  
+  .formDiv2 .input-group {
+    position: relative;
+  }
+  
+  .formDiv2 .input-group-append .icon {
+    position: absolute;
+    right: 15px; /* Adjust for better icon spacing */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the icon */
+    color: #002060;
+    pointer-events: none; /* Prevents icon from blocking input interaction */
+    font-size: 1.2rem; /* Adjust icon size if needed */
+  }
+  
+  .formDiv2 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 35px; /* Ensure space for the icon */
+  }
+  
+  .formDiv2 .floating-label {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 1rem;
+    color: #002060;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+   .input-group input:focus + .floating-label,
+  .formDiv2 .input-group select:focus + .floating-label,
+  .formDiv2 .input-group input:not(:placeholder-shown) + .floating-label,
+  .formDiv2 .input-group select:not(:placeholder-shown) + .floating-label {
+    top: -18px; /* Moves label to the top */
+    font-size: 0.8rem;
+    color: #002060;
+  }
+  
+ .formDiv2 .bookNow {
+    background-color: #00a8e8;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: large;
+  }
+  
+.formDiv2  .bookNow:hover {
+    background-color: #002060;
+    color: white;
+    transition-duration: 0.5s;
+  }
+  /* For input[type="date"] */
+.formDiv2 input[type="date"]::-webkit-calendar-picker-indicator,
+.formDiv2 input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1) brightness(100%) !important; /* White color */
+  opacity: 1; /* Ensure the icon is visible */
+}
+
+/* For input[type="time"] */
+.formDiv2 input[type="time"]::-webkit-appearence,
+.formDiv2 input[type="time"]::-moz-appearance {
+  color: #002060 !important;
+}
+
+@media (max-width: 577px){
+  .formDiv2 {
+   
+    border-radius: 10px !important;
+    margin-top: -30vh;
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+   margin-bottom: 10vh;
+  }
+}

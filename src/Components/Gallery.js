@@ -11,7 +11,7 @@ import { faEye } from "@fortawesome/free-solid-svg-icons"
 
 function Gallery(){
     return <>
-    <div className="mt-5 gallery m-O ">
+    <div className="mt-5 gallery m-O text-center ">
       <p className="servicesTitle">Image Gallery</p>
       <h5 className="servicesTitle2 mb-5">Some Recent Shots By Experts</h5>
       <div className="container mt-5">

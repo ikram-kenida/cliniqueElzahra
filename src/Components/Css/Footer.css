@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+.footer {
+    background-color: #03376A; /* Deep blue background */
+    color: #FFFFFF; /* White text */
+  }
+  
+  .footer h5 {
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+   
+    line-height: 2;
+    margin-top: 15px;
+  }
+  
+  .footer .social-link {
+    display: flex;               /* Enable flexbox */
+    justify-content: center;     /* Horizontally center the icon */
+    align-items: center;         /* Vertically center the icon */
+    color: #FFFFFF;              /* Default icon color */
+    width: 40px;
+    height: 40px;
+    transition: color 0.3s ease;  /* Smooth hover effect */
+    border-radius: 50%;          /* Make it a circle */
+    border: 1px solid white;     /* Border color */
+  }
+  
+  .footer .social-link:hover {
+ 
+    background-color: #00a8e8;
+    animation-duration: 0.5s;
+  }
+  
+  .footer .footer-link  , .footer p , .footer li{
+    letter-spacing: 0.8px;
+    color: #B0C4DE; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold text */
+    transition: color 0.3s ease; /* Smooth hover effect */
+    padding-bottom: 7px;
+  }
+  
+  .footer .footer-link:hover {
+    color: #97acc8; /* Light gray on hover */
+  }
+  
+  .footer ul {
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove bullets */
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem; /* Add spacing between items */
+  }
+  
+  .footer p {
+    margin-bottom: 0.5rem; /* Consistent spacing for paragraphs */
+  }
+  
+  .footer .logo{
+    /* font-size: 2rem; */
+  }

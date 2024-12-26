@@ -2,16 +2,36 @@
 body{
   background-color: rgb(255, 255, 255);
 }
-.photo_accueil{
-    object-fit: cover !important;
-    height: 100vh;
+.photo_accueil_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
+
+.photo_accueil {
+  object-fit: cover !important;
+  height: 100%;
+  width: 100%;
+}
+
+.photo_accueil_container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%; /* Controls the width of the faded area */
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  z-index: 1;
+}
+
 
   
   .overlay-content {
     position: absolute;
-    top: 50%; 
-   
+    top: 48%; 
+    z-index: 5;
     transform: translateY(-50%); 
     text-align: left;
   }
@@ -27,13 +47,13 @@ body{
   font-size: 4rem; 
   font-weight: 900; 
   color: #002060 !important; 
-  line-height: 2; 
+  line-height: 1.5; 
   }
   .overlay-content p {
     font-family: 'Merriweather', serif; /* Matching the heading font */
     font-size: 1rem !important; /* Slightly smaller size */
-    font-weight: 300; /* Regular weight */
-    color: rgb(112, 107, 107) !important; /* Neutral gray color */
+    font-weight: 100; /* Regular weight */
+    color: #333333 !important; /* Neutral gray color */
     line-height: 2; /* Comfortable spacing for readability */
   }
   
@@ -67,20 +87,38 @@ body{
   .aboutUs p{
     font-family: 'Merriweather', serif; /* Matching the heading font */
     font-size: 1rem; /* Slightly smaller size */
-    font-weight: 300; /* Regular weight */
-    color: rgb(95, 94, 94) !important; /* Neutral gray color */
+    font-weight: 100; /* Regular weight */
+    color: #333333 !important; /* Neutral gray color */
     line-height: 2; /* Comfortable spacing for readability */
   }
   .icon{
     font-size: 20px;
     color: rgb(71, 69, 69);
   }
-  .all_services_link{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  .all_services_link {
+    font-family: 'Merriweather', serif;;
     color: #00a8e8;
     text-decoration: none;
-    font-size: large;
+ 
+    font-weight: 600;
+    width: fit-content !important;
+    border-bottom: 2px solid #00a8e8; /* First line */
+    padding-bottom: 10px;
+    position: relative;
   }
+  
+  .all_services_link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Second line thickness */
+    background-color: #00a8e8; /* Same color as first line */
+    transform: translateY(6px); /* Adjust the gap between the two lines */
+  }
+  
+  
   .appointment-form {
     background-color: #00a8e8;
     border-radius: 10px !important;
@@ -250,6 +288,13 @@ line-height: 2;
   margin-bottom: 18px;
   color: white !important;
   line-height: 2;
+}
+.aboutUs h1 , .aboutUs p{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.aboutUs{
+  margin-top: -40px !important;
 }
 }
 @media (min-width: 577px) and (max-width: 1025px) {

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.Consultation,
+.Emergency {
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center; /* Center align the content */
+
+}
+
+.Consultation {
+  background: #eaf7ff; /* Light blue background */
+
+}
+
+.Emergency {
+  background: #fff5f5; /* Light pink background */
+
+}
+
+.Consultation h6 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #00a8e8 !important;
+    line-height: 2;
+}
+.Emergency h6{
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 900;
+   
+    line-height: 2;
+}
+.Emergency h2  , .Consultation h2 {
+    font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #002060;
+}
+
+.Consultation a  , .Emergency a{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 900 !important; 
+  color: #fff !important;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.Consultation .icon  {
+    margin-right: 15px;
+    color: white;
+}
+.Emergency .icon{
+    margin-right: 15px;
+    color: #00a8e8;
+}
+a.btn1 {
+  background-color: #00a8e8; /* Blue button */
+}
+a.btn1:hover {
+    background-color: #00a8e8; /* Blue button */
+  }
+a.btn2 {
+  background-color: white; /* Teal button */
+  color: #00a8e8 !important;
+}
+a.btn2:hover {
+    background-color: white; /* Teal button */
+    color: #00a8e8 !important;
+  }
+
+
+  @media (max-width: 577px){
+    .Emergency h2  , .Consultation h2 {
+      font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #002060;
+  }
+
+.Consultation h6 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #00a8e8 !important;
+  line-height: 2;
+}
+.Emergency h6{
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+ 
+  line-height: 2;
+}
+  }

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.contact {
+    position: relative;
+    display: inline-block; 
+    background: linear-gradient(180deg, #EAF8FF, #D9F0FF, #EAF8FF); /* Smooth gradient */
+    background-size: 400% 400%; /* Expand the gradient to allow animation */
+    animation: gradientAnimation 8s ease infinite; /* Add animation */
+}
+  
+.contact::before,
+.contact::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20%; 
+    pointer-events: none; 
+}
+  
+.contact::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+} 
+  
+.contact::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+} 
+
+.contact .content {
+    position: relative;
+    z-index: 4;
+}
+
+.contact h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 9vw;
+    font-weight: 700;
+    color: #002060;
+    line-height: 1.5;
+}
+
+.contact h1 span {
+    color: #00a8e8;
+}
+
+.contact p {
+    font-family: "Playfair Display", serif;
+    color: #333333;
+    line-height: 2;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact button {
+    width: fit-content;
+    font-family: 'Poppins', sans-serif; /* Modern, clean sans-serif font */
+    font-size: 1rem; /* Standard size for buttons */
+    font-weight: 600; /* Medium weight */
+    color: #ffffff; /* White text */
+    background-color: #002060; /* Deep blue background */
+    padding: 0.6rem 1.3rem; /* Comfortable button padding */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    text-transform: uppercase; /* Make text all caps */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.contact .first {
+    background-color: #00a8e8;
+}
+
+@media (max-width: 768px) {
+    .contact h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 12vw;
+        font-weight: 700;
+        color: #002060;
+        line-height: 1.5;
+    }
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

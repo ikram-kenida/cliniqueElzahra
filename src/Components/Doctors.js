@@ -93,7 +93,7 @@ function SamplePrevArrow(props) {
 // Slider Component
 function CustomArrows() {
   const settings = {
-    dots: true, // Enable indicators
+    dots: false, // Enable indicators
     infinite: true, // Allow infinite sliding
     slidesToShow: 3, // Number of cards visible at a time
     slidesToScroll: 1, // Scroll one card at a time
@@ -126,8 +126,8 @@ function CustomArrows() {
       },
     ],
     appendDots: (dots) => (
-      <div style={{ bottom: "-40px" }}>
-        <ul style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+      <div style={{ bottom: "-60px" }}>
+        <ul style={{ display: "flex", justifyContent: "center", gap: "10px"  , marginLeft:'-5vw' }}>
           {dots}
         </ul>
       </div>
@@ -157,17 +157,17 @@ function CustomArrows() {
   };
 
   return (
-    <div className="Doctors">
+    <div className="Doctors container-fluid p-0 m-0 text-center">
       <p className="servicesTitle">Team Member</p>
-      <h5 className="servicesTitle2 mb-5">Meet Our Experts</h5>
+      <h5 className="servicesTitle2 mb-3">Meet Our Experts</h5>
       <div
-        className="slider-container p-5 mt-5"
+        className="slider-container p-5    "
         style={{ maxWidth: "1200px", margin: "0 auto" }}
       >
         <Slider {...settings}>
           {doctors.map((doctor) => (
             <div key={doctor.id}>
-            <Card className="border-0 text-start doctor mx-3">
+            <Card className="border-0 text-start doctor mx-3 ">
   {/* Doctor Image */}
   <Card.Img
     variant="top"

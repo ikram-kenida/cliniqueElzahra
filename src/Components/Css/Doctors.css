@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
 /* Global Service Section Styling */
+.Doctors{
+  position: relative !important;
+    z-index: 4 !important;
+}
 .Doctors .servicesTitle {
     font-family: "Playfair Display", serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: #00a8e8;
-    line-height: 2;
+    line-height: 1;
+    
 }
 
 .Doctors .servicesTitle2 {
@@ -23,6 +28,7 @@
 }
 .Doctors .doctorImg{
     height: 350px;
+    object-fit: cover;
 }
 .doctor .drName{
     font-family: "Playfair Display", serif;
@@ -51,6 +57,7 @@
   /* Customize dots */
   .slick-dots {
     bottom: -40px;
+    justify-content: center !important;
   }
   
   .slick-dots li {
@@ -87,6 +94,7 @@
     height: 20px;
     background: #002060;
     border-radius: 50%;
+
   }
 /* Style the next and prev arrow icons */
 .slick-prev:before, .slick-next:before {
@@ -107,5 +115,14 @@
   font-size: smaller !important;
   margin-top: -10vh;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+
+
+@media (max-width: 576px) {
+  .Doctors .doctorImg{
+  height: 300px;
+  object-fit: cover !important;
+}
 
 }

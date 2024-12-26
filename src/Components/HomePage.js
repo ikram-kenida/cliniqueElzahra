@@ -3,7 +3,7 @@ import HomeImg from '../Images/17818.jpg';
 import NavBar from "./Header";
 import './Css/Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 import { faBuilding, faUserDoctor, faUser, faEnvelope, faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
@@ -12,7 +12,8 @@ import Gallery from "./Gallery";
 import Reviews from "./Reviews";
 import Doctors from "./Doctors";
 import WhyChooseUs from "./WhyChooseUs";
-
+import Contact from "./Contact";
+import Fotter from "./Footer";
 function HomePage() {
 
 
@@ -40,42 +41,52 @@ function HomePage() {
       <NavBar />
       <div className="position-relative m-0">
        
-       <img src={HomeImg} className="w-100 photo_accueil" alt="Home" />
+      <div className="photo_accueil_container">
+    <img src={HomeImg} className="w-100 photo_accueil" alt="Home" />
+</div>
+
 
      
-       <div className="position-absolute overlay-content col-md-7 mx-5 p-md-5">
-         <h1 className="text-light display-4">Healthcare That Is Convenient and Affordable</h1>
-         <p className="text-light fs-5">There are many variations of passages of Lorem Ipsum available ,  but the majority have suffered.</p>
-         <button className="btn btn-primary mt-3">Meet our team</button>
+       <div className="position-absolute overlay-content col-md-7  mx-5 p-md-5 text-start">
+         <h1 className="text-light display-4 mx-md-5">Healthcare That Is Convenient and Affordable</h1>
+         <p className="text-light fs-5  mx-md-5">There are many variations of passages of Lorem Ipsum available ,  but the majority have suffered.</p>
+         <button className="btn btn-primary mt-3 mx-md-5">Meet our team</button>
        </div>
      </div> 
       <div className="aboutUs  row p-md-5  mx-0 b-0 justify-content-center" id="aboutUs"> 
-          <div className="col-md-5  text-start  mt-5 p-md-0 p-4">
+          <div className="col-md-5  text-start  mt-5 p-md-0 p-4 mx-md-5">
              <h6 className="aboutus mb-4">About Us</h6>
              <h2 className="aboutustext">
              We’re Always Ensure Medical Treatment
              </h2>
-             <p className="aboutusp mt-3 mb-4">
+             <p className="aboutusp mt-3 mb-4 mx-2">
              There are many variations of passages of Ipsum available, but the majority have suffered.
              </p>
              <div className="d-flex align-items-center">
-  
-  <p className="mb-0 ms-2"> <FontAwesomeIcon icon={faCircleCheck} className="icon mx-1 mt-2" /> Lorem ipsum dolor sit amet, consecte adipiscing elit.</p>
-</div>
-<div className="d-flex align-items-center mt-4">
- 
-  <p className="mb-0 ms-2">  <FontAwesomeIcon icon={faCircleCheck} className="icon mx-1 mt-2" /> Sed facilisis felis sed tempor tempor.</p>
+  <p className="mb-0 ms-2">
+    {/* <FontAwesomeIcon icon={faCheck} className="icon mx-3" /> */}
+    Lorem ipsum dolor sit amet, consecte adipiscing elit.
+  </p>
 </div>
 
-             <a href="#" className="all_services_link d-flex align-items-center mt-5">
-  Explore All Services <FontAwesomeIcon icon={faAnglesRight} className=" ms-2" />
+<div className="d-flex align-items-center mt-4">
+  <p className="mb-0 ms-2">
+    {/* <FontAwesomeIcon icon={faCheck} className="icon mx-3" /> */}
+    Sed facilisis felis sed tempor tempor.
+  </p>
+</div>
+
+
+<a href="#" className="all_services_link d-flex align-items-center mt-5 mx-md-2">
+  Explore All Services <FontAwesomeIcon icon={faAnglesRight} className="ms-2" />
 </a>
 
 
 
+
           </div>
-          <div className="col-md-6 formDiv mx-md-5 col-12">
-          <form className="appointment-form p-md-5 p-3">
+          <div className="col-md-5  formDiv mx-md-5 col-12">
+          <form className="appointment-form p-md-5 ">
   <h4>Book An Appointment</h4>
   
   <div className="form-group">
@@ -181,11 +192,14 @@ function HomePage() {
 
           </div>
       </div>
+
 <Services></Services>
 <Gallery></Gallery>
 <Reviews></Reviews>
-<Doctors></Doctors>
+<Doctors></Doctors>  
+<Contact></Contact>
 <WhyChooseUs></WhyChooseUs>
+<Fotter></Fotter>
 
     </>
   );

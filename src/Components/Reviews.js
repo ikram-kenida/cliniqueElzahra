@@ -13,7 +13,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons"
 function Reviews(){
     return(
         <>
-        <div className=" reviews big_reviews container-fluid  mb-5">
+        <div className=" reviews big_reviews container-fluid  text-center mb-5 ">
         <p className="servicesTitle">Testimonial</p>
         <h5 className="servicesTitle2 mb-5">
         What Our Client Say About Us</h5>
@@ -24,7 +24,7 @@ function Reviews(){
             <div class="comment   text-start">
                 <div className="row align-items-center">
                    
-                     <img src={patient1} className="img-fluid col-3  patient mb-3 mt-2"></img> 
+                     <img src={patient1} className="img-fluid col-3  patient mb-2 mt-2"></img> 
                       <div className="d-flex col-6">
                         <FontAwesomeIcon icon={faStar} className="star"> </FontAwesomeIcon>
                         <FontAwesomeIcon icon={faStar } className="star"></FontAwesomeIcon>
@@ -49,7 +49,7 @@ function Reviews(){
             <div class="comment  text-start">
             <div className="row align-items-center">
                    
-                   <img src={patient1} className="img-fluid col-3  patient mb-3 mt-2"></img> 
+                   <img src={patient1} className="img-fluid col-3  patient mb-2 mt-2"></img> 
                     <div className="d-flex col-6">
                       <FontAwesomeIcon icon={faStar} className="star"> </FontAwesomeIcon>
                       <FontAwesomeIcon icon={faStar } className="star"></FontAwesomeIcon>
@@ -66,7 +66,7 @@ function Reviews(){
             <div class="comment  text-start">
             <div className="row align-items-center">
                    
-                   <img src={patient2} className="img-fluid col-3  patient mb-3 mt-2"></img> 
+                   <img src={patient2} className="img-fluid col-3  patient mb-2 mt-2"></img> 
                     <div className="d-flex col-6">
                       <FontAwesomeIcon icon={faStar} className="star"> </FontAwesomeIcon>
                       <FontAwesomeIcon icon={faStar } className="star"></FontAwesomeIcon>
@@ -83,7 +83,7 @@ function Reviews(){
             <div class="comment  text-start">
             <div className="row align-items-center">
                    
-                   <img src={patient1} className="img-fluid col-3  patient mb-3 mt-2"></img> 
+                   <img src={patient1} className="img-fluid col-3  patient mb-2 mt-2"></img> 
                     <div className="d-flex col-6">
                       <FontAwesomeIcon icon={faStar} className="star"> </FontAwesomeIcon>
                       <FontAwesomeIcon icon={faStar } className="star"></FontAwesomeIcon>

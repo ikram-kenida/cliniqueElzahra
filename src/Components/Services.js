@@ -12,24 +12,24 @@ function Services(){
         {
           title: "Dental Care",
           description: "Healthcare that is convenient and affordable your good health!",
-          icon: faTooth, // Replace with an icon class or image
+          icon: faTooth, 
         },
         {
           title: "Covid-19 Test",
           description: "Healthcare that is convenient and affordable your good health!",
-          icon: faVirusCovid, // Replace with an icon class or image
+          icon: faVirusCovid, 
         },
       ];
   return (
     <>
-   <div className="services mt-5 ">
+   <div className="services mt-5 text-center ">
   <p className="servicesTitle">Popular Services</p>
-  <h5 className="servicesTitle2 mb-5">Which Services We provide</h5>
+  <h5 className="servicesTitle2 mb-3">Which Services We provide</h5>
   <div className="row mb-5 justify-content-center m-0">
     {services.map((service, index) => (
       <div className="col-md-3 mx-4 mb-4 mt-5 service col-10" key={index}>
         <div className="d-flex">
-          <div className="icondiv mx-4 p-4">
+          <div className="icondiv mx-5 p-3">
             <FontAwesomeIcon icon={service.icon} className="icon mt-4" />
           </div>
           <FontAwesomeIcon icon={faAnglesRight} className="icon mt-3 ms-auto mx-4 mt-4 angleRight p-3" />
@@ -41,7 +41,7 @@ function Services(){
       </div>
     ))}
   </div>
-  <a href="#" >Explore all services</a>
+  <a href="/services" >Explore all services</a>
 </div>
 
      </>

@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.services-banner {
+  background: linear-gradient(360deg, rgba(243, 248, 253, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  position: relative;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+/* Title Styling */
+.services-title {
+  font-size: 3.3rem !important;
+  font-weight: 900 !important;
+  color: #03376A; /* Dark Blue */
+  font-family: "Merriweather", serif; /* Using Merriweather as it is imported */
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-item a.breadcrumb-link {
+  color: #03376A;
+  font-family: "Merriweather", serif;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #1E90FF; /* Dark Blue */
+  font-weight: bold;
+}
+
+/* Background Decorations */
+.services-banner::before,
+.services-banner::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
+}
+
+/* Left Decoration */
+.services-banner::before {
+  top: 10%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
+}
+
+/* Right Decoration */
+.services-banner::after {
+  bottom: 10%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+}
+
+
+
+
+.services_page .servicesTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #00a8e8;
+  line-height: 1;
+}
+
+.services_page .servicesTitle2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #002060;
+  line-height: 2;
+}
+
+/* Service Cards Styling */
+.services_page .service {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+    border: none !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important; /* Existing shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
+    
+  }
+  
+  .services_page .service:hover {
+    box-shadow: 
+      0px 7px 29px rgba(100, 100, 111, 0.2) ,  0px 5px #00a8e8 !important; /* Add the new blue shadow on hover */
+    cursor: pointer;
+  }
+  
+/* Icon Styling */
+.services_page .service .icon {
+  color: #00a8e8;
+  font-size: 3rem;
+}
+.services_page .service .serviceTitle{
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #002060;
+    line-height: 1;
+}
+.services_page .service .servicedesc{
+   
+    color: rgb(101, 111, 121);
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold text */
+    transition: color 0.3s ease; /* Smooth hover effect */
+    padding-bottom: 7px;
+}
+
+@keyframes pattern-animation {
+  0% {
+    margin-top: 0px; 
+  }
+  25% {
+    margin-top: 7px; 
+  }
+  50% {
+    margin-top: 0px;
+  }
+  75% {
+    margin-top: -7px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.pattern {
+  justify-content: start;
+  margin-left: -70vw;
+  margin-bottom: -20vh;
+  height: 15vh !important;
+  width: 15vh !important;
+  animation: pattern-animation 1.5s ease-in-out infinite; 
+}
+.needEmergency{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(240, 248, 255, 0.6) 70%, rgba(173, 216, 230, 1) 100%);
+ 
+}
+ .reword{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important; /* Existing shadow */
+ color: rgb(101, 111, 121);
+ position: relative;
+ z-index: 8;
+ background-color: white;
+ margin-bottom: -5vh;
+  border-radius: 10px;
+  font-weight: 400;
+  margin-left: -3vw;
+}
+.services_page{
+  padding: 10VW;
+  padding-top: 0px !important;
+}
+ .chartdiv{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important; /* Existing shadow */
+ color: rgb(101, 111, 121);
+ position: relative;
+ z-index: 8;
+ background-color: white;
+ margin-top: -8svh;
+  border-radius: 10px;
+  color: #002060;
+  font-weight: 400;
+}
+ .chartdiv .chart{
+  font-size: xx-large;
+  color: #00a8e8;
+}
+ .call{
+  background-color: #00a8e8;
+  color: white;
+  border-radius: 10px;
+}
+.call:hover{
+  background-color: #0e3fa0;
+  transition-duration: 0.2s;
+}
+ .calli{
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  font-size: x-large;
+  border-radius: 50%;
+ 
+}
+ .call a{ 
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+  
+  color: white;
+}
+ .call p{ 
+  text-decoration: none;
+ 
+  font-size: 1rem;
+  font-weight: 300;
+  
+  color: white;
+}
+.needTitle{
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #00a8e8;
+  line-height: 2;
+}
+
+.needTitle2{
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #002060;
+  line-height: 2;
+}
+.needp{ 
+  text-decoration: none;
+ 
+  font-size: 1rem;
+  font-weight: 300;
+  
+  color: rgb(101, 111, 121);
+  line-height: 2;
+}
+
+
+
+
+
+
+@media (max-width: 577px)  {
+  .services_page .chartdiv{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important; /* Existing shadow */
+   color: rgb(101, 111, 121);
+   position: relative;
+   z-index: 8;
+   background-color: white;
+   margin-top: 2vh;
+    border-radius: 10px;
+    color: #002060;
+    font-weight: 400;
+    display: none !important;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .services_page .service_card {
+    background-color: transparent !important; 
+      min-width: 100% !important;
+      border: none !important;
+    justify-content: center !important;
+     
+      background-color: transparent !important;
+  }
+}

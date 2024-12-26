@@ -3,11 +3,37 @@
 /* Global Service Section Styling */
 
 
-.whyChooseUs{
-    background-color: whitesmoke ;
-    padding-top: 2vh !important ;
+.whyChooseUs {
+    position: relative; /* Ensure the pseudo-elements are positioned relative to this container */
+    padding-top: 2vh !important;
     padding-bottom: 2vh !important;
-}
+   
+  }
+  
+  .whyChooseUs::before,
+  .whyChooseUs::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 20%;
+    pointer-events: none;
+  }
+  
+  .whyChooseUs::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  }
+  
+  .whyChooseUs::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgb(248, 245, 245), rgba(255, 255, 255, 0));
+  }
+  
+  .whyChooseUs .content{
+    position: relative;
+    z-index: 5;
+  }
 
 .whyChooseUs .servicesTitle {
     font-family: "Playfair Display", serif;

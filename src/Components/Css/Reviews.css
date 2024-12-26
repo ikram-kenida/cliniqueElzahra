@@ -28,7 +28,7 @@
     font-weight: 900;
     color: whitesmoke;
     line-height: 2;
-    margin-bottom: 20vh !important;
+    margin-bottom: 10vh !important;
 }
 .reviews .image{
     /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
@@ -49,10 +49,10 @@ height: 70vh;
     z-index: 5;
     color: #002060;
      width: 27%; 
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 !important;
    
 }
@@ -86,12 +86,13 @@ height: 70vh;
     font-family: "Playfair Display", serif;
     font-size: 0.9rem;
     font-weight: 300;
-    line-height: 35Px;
+   
 }
 .reviews .comment h6{
     font-family: "Playfair Display", serif;
     font-size: 1rem;
     font-weight: 900;
+    padding-bottom: 8px;
 }
 .reviews .comment .star{
     margin-right: 1.5px;
@@ -142,6 +143,9 @@ height: 70vh;
     }
     .big_reviews{
         display: none !important;
+    }
+    .small_reviews{
+        display: block !important;
     }
 }
 
