@@ -29,7 +29,8 @@
 }
 
 .breadcrumb-item.active {
-  color: #1E90FF; /* Dark Blue */
+  font-family: "Merriweather", serif;
+  color: #1E90FF !important; /* Dark Blue */
   font-weight: bold;
 }
 

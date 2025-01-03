@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.aboutusPage .aboutimg{
+    
+    object-fit: cover;
+    border-radius: 10px;
+}
+.aboutusPage .patternimg{
+    margin-right: -5vw;
+    margin-top: -6vh ;
+    height: 15vh !important;
+    width: 15vh !important;
+}
+.aboutusPage .years{
+    /* font-family: "Playfair Display", serif; */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00a8e8;
+    line-height: 2;
+}
+.aboutusPage .text{
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #002060;
+    line-height: 2;
+}
+.aboutusPage p{
+  
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    
+    color: rgb(101, 111, 121);
+    line-height: 2;
+    
+}
+
+.aboutusPage .aboutusContent{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: fit-content !important;
+    margin-left: -5vw;
+    margin-top: 10vh !important;
+    position: relative;
+    z-index: 600;
+}
+.aboutusContent .icon{
+    color: #00a8e8;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.aboutusContent h5{
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #002060;
+    line-height: 2;
+}
+.aboutusContent a{
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #00a8e8;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 6px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.aboutusContent a:hover{
+    color: #00a8e8;
+    background-color: white;
+    border: 1px solid #00a8e8;
+    
+}
+.mapCart {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+   
+   height: 70vh;
+  }
+  
+  .map-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60vh !important;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+    border-radius: 10px;
+    margin-bottom: 20vh !important;
+  }
+  
+  .map-responsive iframe {
+    margin-bottom: 20vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    border: none; /* Ensures no border on the iframe */
+  }
+  
+.playdiv{
+    margin-top: -6vh !important;
+}
+  .playIcon{
+    height: 30px;
+    width: 30px;
+    color: #002060;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  
+    
+  }
